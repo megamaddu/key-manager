@@ -1,0 +1,24 @@
+{
+  "name": "key-manager",
+  "version": "0.1.0",
+  "description": "simplified key access for clients and servers",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.netsteps.local:key-manager"
+  },
+  "keywords": [],
+  "author": "Michael Trotter",
+  "license": "MIT",
+  "devDependencies": {
+    "expect.js": "~0.2.0",
+    "mocha": "~1.12.0"
+  }
+}
