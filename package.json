@@ -1,6 +1,6 @@
 {
   "name": "key-manager",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "simplified key access for clients and servers",
   "main": "index.js",
   "directories": {
