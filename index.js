@@ -20,10 +20,10 @@ module.exports = function(appname, env, keydir, privsuffix, pubsuffix) {
   }
 
   appname = clean(appname);
+  env = env || 'dev';
   privsuffix = privsuffix || 'key';
   pubsuffix = pubsuffix || 'key.pub';
-  env = env || 'dev';
-  keydir = path.join(keydir || path.join(process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE, '.ns'), env);
+  keydir = path.join(keydir || path.join(process.env.UserProfileKeyDir || process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE, '.keys'), env);
   return function(tcid, cb) {
     tcid = clean(tcid);
     if (tcid in keycache) {
